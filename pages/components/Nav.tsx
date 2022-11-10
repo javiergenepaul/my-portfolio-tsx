@@ -1,25 +1,30 @@
-import React from "react";
+import React, { useState,useEffect } from "react";
 import { Icon } from "@iconify/react";
-import { useTheme } from 'next-themes'		
+import { useTheme } from 'next-themes';
+
 
 type Props = {};
-
-
 
 function Nav({}: Props) {
 	const {systemTheme, theme, setTheme} = useTheme();
 	const currentTheme = theme === 'system' ? systemTheme : theme;
 
-	console.log(currentTheme);
-	
+	const [mounted, setMounted] = useState(false);
+
+	useEffect(() => {
+		setMounted(true);
+	}, []);
+
+	if (!mounted) return null;
     return (
         <div className="text-white flex justify-between py-[12px] items-center">
-            <div className="icons">
-                <img src="/navlogo.svg" alt="" />
+            <div className="flex">
+                <img src="/logo.svg" alt="" />
+				<span className="">JAVI</span>
             </div>
             <div className="flex gap-4">
-                <ul className="flex gap-4 text-black dark:text-white">
-                    <li className="text-black dark:text-white">HOME</li>
+                <ul className="flex gap-4">
+                    <li>HOME</li>
                     <li>ABOUT</li>
                     <li>PROJECTS</li>
                     <li>CONTACTS</li>

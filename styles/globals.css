@@ -33,7 +33,7 @@
         @apply text-[14px]
     }
     
-    /* li {
+    li {
         @apply text-[16px] text-black dark:text-white
-    } */
+    }
 }
