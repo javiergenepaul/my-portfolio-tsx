@@ -18,9 +18,9 @@ function Nav({}: Props) {
 	if (!mounted) return null;
     return (
         <div className="text-white flex justify-between py-[12px] items-center">
-            <div className="flex">
+            <div className="flex gap-4 items-center font-bold tracking-[0.135em] leading-[141.5%]">
                 <img src="/logo.svg" alt="" />
-				<span className="">JAVI</span>
+				<span className="text-[32px] text-black dark:text-white">JAVI</span>
             </div>
             <div className="flex gap-4">
                 <ul className="flex gap-4">
