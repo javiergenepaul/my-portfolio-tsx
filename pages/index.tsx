@@ -10,13 +10,13 @@ import { Nav, Hero, About, Skills, Projects, Contacts } from './components'
 const Home: NextPage = () => {
     return (
         <div className="dark">
-            <div className="flex min-h-screen flex-col bg-background-light dark:bg-background-dark">
+            <div className="flex min-h-screen flex-col bg-background-dark dark:bg-background-dark font-chakra">
                 <Head>
                     <title>Javi Portfolio</title>
                     <link rel="icon" href="/favicon.ico" />
                 </Head>
 
-                <main className="max-w-[80%] w-full mx-auto">
+                <main className="max-w-[1152px] w-full mx-auto">
                     <Nav />
                     <Hero />
                     <About />

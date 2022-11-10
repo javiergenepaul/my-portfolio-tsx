@@ -9,10 +9,14 @@ module.exports = {
     darkMode: 'class',
     colors:{
       "primary": "#5047EB",
+      "white": "#FFFFFF",
       "background": {
         "dark": "#08080C",
         "light": "#F7F7F8"
       },
+    },
+    fontFamily: {
+      chakra : ['Chakra Petch', 'sans-serif']
     },
     extend: {},
   },
