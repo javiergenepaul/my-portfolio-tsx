@@ -1,4 +1,5 @@
 import React from 'react'
+import { Icon } from '@iconify/react';
 
 type Props = {}
 
@@ -15,7 +16,9 @@ function Nav({}: Props) {
 				<li>PROJECTS</li>
 				<li>CONTACTS</li>
 			</ul>
-			<button>LIGHT</button>
+			<button className='text-primary'>
+				<Icon icon="ic:outline-dark-mode" width="24" height="24" />
+			</button>
 		</div>
       
     </div>
